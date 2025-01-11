@@ -6,4 +6,4 @@ jobs:
     runs-on: ubuntu_latest
     steps:
       - name: Test Action
-        run: echo "Event triggered"
+        run: echo "Event has been triggered"
