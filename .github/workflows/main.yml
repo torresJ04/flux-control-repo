@@ -8,7 +8,7 @@ on:
         required: true
 jobs:
   teste:
-    runs-on: ubuntu_latest
+    runs-on: ubuntu-latest
     steps:
       - name: Test Action
         run: echo "Input event has been triggered:, ${{ inputs.input-example }}"
