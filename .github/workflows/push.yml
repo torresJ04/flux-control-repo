@@ -1,0 +1,11 @@
+name: Push event 
+on:
+  push:
+    branches: ["main", "feature/*"]
+jobs:  
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Push action"
+        run: echo "Push action"
+  
