@@ -1,9 +1,11 @@
 name: Push event 
 on:
   push:
-    tags: 
-      - v*
-    # branches: ["main", "feature/*"]
+    # tags: 
+      # - v*
+    branches: ["main", "features/*"]
+    paths: 
+      - "src/**"
 jobs:  
   test:
     runs-on: ubuntu-latest
