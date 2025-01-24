@@ -14,4 +14,14 @@ jobs:
     steps:
       - name: "Push action"
         run: echo "Push action on features"
+      - name: "Changing card"
+        uses: actions/github-script@v6
+        with: 
+          script: | 
+            github.rest.issue.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.owner,
+              body: 'Adding comment about the PR'
+            })
   
